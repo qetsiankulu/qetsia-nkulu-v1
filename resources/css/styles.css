@@ -3,11 +3,15 @@
     font-family: 'Inter'; 
     padding: 0; 
     margin: 0; 
+    box-sizing: border-box;   
 }
-
 
 h3 { 
     font-weight: 300;
+}
+
+body { 
+    background-color: #282828;
 }
 
 /* Navigation-Bar*/
@@ -16,41 +20,66 @@ header {
     z-index: 1;
     position: fixed; 
     top: 0; 
-    background-color: white; 
+    background-color: #FFD90D; 
 }
 
 .nav-bar { 
     width: 100%;  
 }
 
-.nav-bar ul { 
-    width: 400px; 
-    margin: 10px auto; 
+.nav-container { 
+    text-align: center;
 }
 
-.nav-bar li { 
+.nav-container ul { 
     display: inline-block;
-    padding: 0 10px; 
-    margin: 0 6px; 
 }
+
+
+ul { 
+    padding: 10px; 
+    margin-left: auto;
+    margin-right: auto; 
+    font-size: 24px; 
+}
+
+ul > li { 
+    display: inline;
+    margin: 0px 32px; 
+}
+
+ul li a:any-link { 
+    color: #000; 
+    text-decoration: none;
+}
+
+ul li a:hover { 
+    color: #6E0A1F; 
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 
 .nav-bar img { 
     display: block;
     margin: 0 auto; 
 }
 
+
 /* Introduction */ 
 .intro {  
     width: 100%;  
     padding: 70px 200px 45px 200px; 
     position: relative; 
-    top: 158px; 
-    background-color: #efefef; 
+    top: 250px; 
 }
+
 
 #intro-text h1 {
     font-size: 48px; 
     text-align: left;
+    color: #FFD90D; 
+    font-weight: 600;
 }
 
 #intro-text h2 {
@@ -58,11 +87,31 @@ header {
     font-size: 32px; 
     font-weight: normal; 
     text-align: left;
+    color: #ffffff; 
 }
 
 #intro-text p { 
     margin-top: 20px; ;
     text-align: left;
+    font-size: 24px; 
+}
+
+div > img { 
+  height: auto; 
+  width: 400px; 
+  position: relative; 
+  bottom: 350px; 
+  left: 800px; 
+  border-radius: 15px;
+}
+
+p > span { 
+    color: #FFD90D; 
+}
+
+p > strong { 
+    color: #ffffff; 
+    font-weight: 600;
 }
 
 /* Projects Display */
