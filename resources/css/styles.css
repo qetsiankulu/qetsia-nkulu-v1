@@ -1,0 +1,157 @@
+/* Global Styling */
+* { 
+    font-family: 'Inter'; 
+    padding: 0; 
+    margin: 0; 
+}
+
+
+h3 { 
+    font-weight: 300;
+}
+
+/* Navigation-Bar*/
+header { 
+    width: 100%; 
+    z-index: 1;
+    position: fixed; 
+    top: 0; 
+    background-color: white; 
+}
+
+.nav-bar { 
+    width: 100%;  
+}
+
+.nav-bar ul { 
+    width: 400px; 
+    margin: 10px auto; 
+}
+
+.nav-bar li { 
+    display: inline-block;
+    padding: 0 10px; 
+    margin: 0 6px; 
+}
+
+.nav-bar img { 
+    display: block;
+    margin: 0 auto; 
+}
+
+/* Introduction */ 
+.intro {  
+    width: 100%;  
+    padding: 70px 200px 45px 200px; 
+    position: relative; 
+    top: 158px; 
+    background-color: #efefef; 
+}
+
+#intro-text h1 {
+    font-size: 48px; 
+    text-align: left;
+}
+
+#intro-text h2 {
+    margin: 5px 0; 
+    font-size: 32px; 
+    font-weight: normal; 
+    text-align: left;
+}
+
+#intro-text p { 
+    margin-top: 20px; ;
+    text-align: left;
+}
+
+/* Projects Display */
+div.projects h3 { 
+    margin-left: 200px;
+}
+
+.projects { 
+    top: 158px; 
+    display: block;
+    box-sizing: border-box;
+    padding: 30px 0; 
+    background-color: #efefef; 
+    position: relative; 
+}
+
+.container { 
+    box-sizing: border-box;
+    display: block; 
+    padding: 0 250px; 
+    width: 100%; 
+}
+
+.card { 
+    background-color: #fff;
+    margin: 40px 0; 
+    display: flex; 
+    width: 75%; 
+    margin: 40px auto; 
+    border-radius: 30px; 
+    padding: 40px; 
+} 
+
+
+.card-item--visual { 
+    box-sizing: border-box;
+    display: block; 
+}
+
+.card-item--text { 
+    box-sizing: border-box; 
+    font-size: 16px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 64px; 
+    line-height: 50px; 
+}
+
+p.project-type { 
+    font-weight: bold; 
+}
+
+button { 
+    background-color: #0093FE;
+    color:#fff; 
+    border-color: #0093FE; 
+    font-weight: 600;
+    padding: 16px 16px; 
+    border-radius: 10px; 
+}
+
+/* Site-Footer */
+footer {
+    margin: 30px 0; ; 
+    top: 145px; 
+    position: relative; 
+}
+
+footer.site-footer{ 
+    height: 100%; 
+    width: 100%;
+}
+
+div.footer-socials { 
+padding: 10px ; 
+}
+
+div.footer-socials ul { 
+    width: 150px; 
+    margin: 0 auto; 
+}
+
+div.footer-socials ul li { 
+    display: inline-block; 
+    padding: 0 10px; 
+}
+
+div.footer-text { 
+    text-align: center; 
+    padding: 10px 0; 
+}
