@@ -182,17 +182,14 @@ p.project-type {
 }
 
 .btn { 
-    display: block; 
-    width: 109px; 
-    height: 54px; 
-    padding: 16px 32px;
-    border-radius: 10px; 
-    font-size: 18px;
-    background: #FFD90D;
-    color:#000;  
-    font-weight: 600;
-    padding: 16px 32px; 
+   background-color: #FFD90D;
+   color: #000; 
+   text-decoration: none;
+   border-radius: 8px;
+   padding: 16px 32px; 
+   font-weight: 600; 
 } 
+
 
 .btn:any-link { 
     color: black; 
@@ -203,7 +200,6 @@ p.project-type {
 .btn:hover { 
     background-color: #6E0A1F;
     color:#FFD90D; 
-    border-color: #6E0A1F; 
 }
 
 /* Site-Footer */
