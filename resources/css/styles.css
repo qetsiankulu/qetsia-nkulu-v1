@@ -59,18 +59,10 @@ nav .nav-container ul li a:any-link {
 
 
 /* Introduction */
-
-/* section { 
-    display: flex; 
-    justify-content: center; 
-    text-size-adjust: 100%;
-} */
-
-
 .intro-container { 
     position: relative; 
     top: 165px; 
-    border: 2px red solid; 
+    border: 2px #fff solid; 
     display: block; 
     width: 100%;  
     justify-content: flex-start;
@@ -78,10 +70,12 @@ nav .nav-container ul li a:any-link {
 } 
 
 .intro-wrapper { 
-    border: 2px #FFD90D solid; 
-    justify-content: center;
+    border: 2px #fff solid; 
     margin: 100px 0px; 
+    width: 1265px; 
     max-width: 1265px; 
+    margin: 0 auto; 
+    position: relative; 
 }
 
 .intro-wrapper h1 { 
@@ -121,7 +115,6 @@ div.intro-wrapper > img {
 }
 
 
-
 /* Projects Display */
 div.projects h3{ 
     margin-left: 500px;
@@ -149,7 +142,7 @@ div.feat-projects > div {
     border: 2px white solid; 
 }
 
-.container { 
+.card-container { 
     box-sizing: border-box;
     display: block; 
     padding: 0 20px; 
@@ -160,7 +153,8 @@ div.feat-projects > div {
     background-color: #000;
     margin: 40px 0; 
     display: flex; 
-    width: 50%; 
+    width: 1000px ; 
+    max-width: 1000px; 
     margin: 40px auto; 
     border-radius: 30px; 
     padding: 40px; 
@@ -187,14 +181,29 @@ p.project-type {
     font-weight: bold; 
 }
 
-button { 
-    background-color: #FFD90D;
-    color:#fff; 
-    border-color: #FFD90D;  
+.btn { 
+    display: block; 
+    width: 109px; 
+    height: 54px; 
+    padding: 16px 32px;
+    border-radius: 10px; 
+    font-size: 18px;
+    background: #FFD90D;
+    color:#000;  
     font-weight: 600;
     padding: 16px 32px; 
-    border-radius: 10px; 
-    font-size: 18px; ;
+} 
+
+.btn:any-link { 
+    color: black; 
+    text-decoration: none;
+}
+
+
+.btn:hover { 
+    background-color: #6E0A1F;
+    color:#FFD90D; 
+    border-color: #6E0A1F; 
 }
 
 /* Site-Footer */
