@@ -18,7 +18,7 @@ body {
 header { 
     width: 100%; 
     z-index: 1;
-    position: fixed; 
+    position: sticky; 
     top: 0; 
     background-color: #FFD90D; 
 }
@@ -59,33 +59,26 @@ nav .nav-container ul li a:any-link {
 
 
 /* Introduction */
-.intro-container { 
-    position: relative; 
-    top: 165px; 
-    border: 2px #fff solid; 
-    display: block; 
-    width: 100%;  
-    justify-content: flex-start;
-    clear: both; 
-} 
 
-.intro-wrapper { 
-    border: 2px #fff solid; 
-    margin: 100px 0px; 
-    width: 1265px; 
-    max-width: 1265px; 
-    margin: 0 auto; 
-    position: relative; 
+.intro-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.intro-wrapper h1 { 
+
+.intro__text { 
+    margin: 100px 0px;  
+}
+
+.intro__text h1 { 
     font-size: 48px; 
     text-align: left;
     color: #FFD90D; 
     font-weight: 600;
 }
 
-.intro-wrapper h2 {
+.intro__text h2 {
     margin: 5px 0; 
     font-size: 32px; 
     font-weight: normal; 
@@ -93,22 +86,23 @@ nav .nav-container ul li a:any-link {
     color: #ffffff; 
 }
 
-.intro-wrapper p { 
+.intro__text p { 
     margin-top: 20px; ;
     text-align: left;
     font-size: 24px; 
 }
 
-.intro-wrapper p > span { 
+.intro__text p > span { 
     color: #FFD90D; 
 }
 
-.intro-wrapper p > strong { 
+.intro__text p > strong { 
     color: #ffffff; 
     font-weight: 600;
 }
 
-div.intro-wrapper > img { 
+.intro__img img { 
+ margin: 50px 0 0 50px; 
   height: auto; 
   width: 460px; 
   border-radius: 15px;
