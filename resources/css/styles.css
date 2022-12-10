@@ -127,9 +127,7 @@ div.feat-projects > div {
 }
 
 .projects { 
-    top: 170px; 
     display: block;
-    position: relative; 
     box-sizing: border-box;
     padding: 30px 0; 
     background-color: #282828; 
