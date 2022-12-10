@@ -1,10 +1,38 @@
-/* Global Styling */
+/* Site Stylesheet  
+  1. Global Styling  
+  2. Navigation Bar 
+  3. Tea of the Month
+  4. Locations
+  5. Contact
+  6. Footer
+======================================== */
+
+/* 1. Global Styling 
+======================================== */
+
 * { 
     font-family: 'Inter'; 
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;   
 }
+
+body { 
+    background-color: #282828;
+}
+
+
+
+/* 3. Typography Styles 
+======================================== */
+
+
+
+/* 2. Navigation Bar 
+======================================== */
+
+
+
 
 h3 { 
     font-weight: 300;
@@ -128,14 +156,11 @@ div.feat-projects > div {
 
 .projects { 
     display: block;
-    box-sizing: border-box;
     padding: 30px 0; 
-    background-color: #282828; 
-    border: 2px white solid; 
+    background-color: #282828;  
 }
 
 .card-container { 
-    box-sizing: border-box;
     display: block; 
     padding: 0 20px; 
     width: 100%; 
@@ -145,7 +170,7 @@ div.feat-projects > div {
     background-color: #000;
     margin: 40px 0; 
     display: flex; 
-    width: 1000px ; 
+    width: 1000px; 
     max-width: 1000px; 
     margin: 40px auto; 
     border-radius: 30px; 
@@ -153,9 +178,10 @@ div.feat-projects > div {
 } 
 
 
-.card-item--visual { 
+.card-item--visual a > img { 
     box-sizing: border-box;
-    display: block; 
+    height: auto; 
+    width: 353px; 
 }
 
 .card-item--text { 
@@ -169,8 +195,18 @@ div.feat-projects > div {
     color: #fff; 
 }
 
-p.project-type { 
+.card-item--text div h2 { 
+    font-size: 35px;
+}
+
+.card-item--text div p { 
+    font-size: 26px;
+    text-align: left;
+}
+
+.card-item--text div p.project-type { 
     font-weight: bold; 
+    font-size: 17px;
 }
 
 .btn { 
@@ -182,12 +218,10 @@ p.project-type {
    font-weight: 600; 
 } 
 
-
 .btn:any-link { 
     color: black; 
     text-decoration: none;
 }
-
 
 .btn:hover { 
     background-color: #6E0A1F;
