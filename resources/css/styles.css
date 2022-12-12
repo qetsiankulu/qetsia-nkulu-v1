@@ -9,7 +9,6 @@
 
 /* 1. Global Styling 
 ======================================== */
-
 * { 
     font-family: 'Inter'; 
     padding: 0; 
@@ -21,22 +20,8 @@ body {
     background-color: #282828;
 }
 
-
-
-/* 3. Typography Styles 
-======================================== */
-
-
-
 /* 2. Navigation Bar 
 ======================================== */
-
-
-
-
-h3 { 
-    font-weight: 300;
-}
 
 body { 
     background-color: #282828;
@@ -87,13 +72,11 @@ nav .nav-container ul li a:any-link {
 
 
 /* Introduction */
-
 .intro-container { 
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-
 
 .intro__text { 
     margin: 100px 0px;  
@@ -138,26 +121,23 @@ nav .nav-container ul li a:any-link {
 
 
 /* Projects Display */
-div.projects h3{ 
-    margin-left: 500px;
-    color: #fff;
+.card-container h3 { 
+    color: white; 
+    padding-top: 15px;
+    font-weight: 100;
+    text-align: center;
+    margin-right: 1100px;
 }
 
-div.feat-projects { 
-    display: inline-block; 
-}
-
-div.feat-projects > div { 
-    background-color: white; 
+.card-container h3::before { 
+    content: " "; 
+    display: inline-block;
     width: 30px; 
     height: 1px; 
-    margin: 0 auto; 
-}
-
-.projects { 
-    display: block;
-    padding: 30px 0; 
-    background-color: #282828;  
+    vertical-align: top;
+    margin-top: 11px;
+    margin-right: 10px; 
+    background: #fff;
 }
 
 .card-container { 
@@ -168,15 +148,12 @@ div.feat-projects > div {
 
 .card { 
     background-color: #000;
-    margin: 40px 0; 
     display: flex; 
     width: 1000px; 
-    max-width: 1000px; 
     margin: 40px auto; 
     border-radius: 30px; 
     padding: 40px; 
 } 
-
 
 .card-item--visual a > img { 
     box-sizing: border-box;
@@ -193,6 +170,7 @@ div.feat-projects > div {
     padding: 32px 64px; 
     line-height: 50px; 
     color: #fff; 
+    text-align: left;
 }
 
 .card-item--text div h2 { 
@@ -200,8 +178,10 @@ div.feat-projects > div {
 }
 
 .card-item--text div p { 
+    padding: 10px 0; 
     font-size: 26px;
     text-align: left;
+    line-height: 31px; 
 }
 
 .card-item--text div p.project-type { 
@@ -209,7 +189,7 @@ div.feat-projects > div {
     font-size: 17px;
 }
 
-.btn { 
+ .btn { 
    background-color: #FFD90D;
    color: #000; 
    text-decoration: none;
@@ -227,6 +207,13 @@ div.feat-projects > div {
     background-color: #6E0A1F;
     color:#FFD90D; 
 }
+
+  /* Styles for Unavailable Projects */ 
+div.card-unavailable .card-item--visual img, div.card-unavailable .card-item--text .btn { 
+    filter: brightness(50%);
+}
+
+
 
 /* Site-Footer */
 footer {
