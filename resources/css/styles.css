@@ -203,7 +203,7 @@ nav .nav-container ul li a:any-link {
     text-decoration: none;
 }
 
-.btn:hover { 
+.card-available .btn:hover { 
     background-color: #6E0A1F;
     color:#FFD90D; 
 }
@@ -214,35 +214,44 @@ div.card-unavailable .card-item--visual img, div.card-unavailable .card-item--te
 }
 
 
-
 /* Site-Footer */
 footer {
     margin: 30px 0; ; 
     top: 145px; 
     position: relative; 
-}
-
-footer.site-footer{ 
+    display: flex;
+    flex-direction: column;
     height: 100%; 
     width: 100%;
+    justify-content: center;
 }
 
-div.footer-socials { 
-padding: 10px ; 
+
+.footer-socials { 
+display: inline-flex;
+justify-content: center;
 }
 
-div.footer-socials ul { 
-    width: 150px; 
-    margin: 0 auto; 
+
+.footer-socials li { 
+    padding: 0px 10px;  
+    margin: 10px 5px; 
+    list-style-type: none;
+
 }
 
-div.footer-socials ul li { 
-    display: inline-block; 
-    padding: 0 10px; 
+.social-icon { 
+    filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
+    width: 60px; 
 }
 
-div.footer-text { 
+.social-icon:hover { 
+    filter: invert(14%) sepia(14%) saturate(6068%) hue-rotate(315deg) brightness(114%) contrast(118%); 
+    width: 60px; 
+}
+
+.footer-text { 
     text-align: center; 
     color: #fff; 
     padding: 10px 0; 
-}
+} 
