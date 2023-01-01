@@ -22,23 +22,14 @@ body {
 
 /* 2. Navigation Bar 
 ======================================== */
-
-body { 
-    background-color: #282828;
-}
-
 /* Navigation-Bar*/
 header { 
     width: 100%; 
     z-index: 1;
     position: sticky; 
     top: 0; 
-    background-color: #FFD90D; 
-}
-
-.nav-container { 
     text-align: center;
-    border: 1px #6E0A1F solid; 
+    background-color:  #FFD90D; 
 }
 
 .nav-container img { 
@@ -66,9 +57,57 @@ nav .nav-container ul li a:any-link {
 
  nav .nav-container ul li a:hover { 
     color: #6E0A1F; 
-    text-decoration: underline;
     font-weight: 600;
 }
+
+        /* Navigation Bar Variant*/
+    
+        header.project-nav { 
+            background-color: transparent; 
+        }
+
+        header.project-nav img { 
+            filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
+        } 
+        
+        header.project-nav .nav-container ul li a:any-link { 
+            color: #FFD90D; 
+            text-decoration: none;
+        }
+        
+        header.project-nav .nav-container ul li a:hover { 
+            color: #ffffff; 
+            font-weight: 600;
+        }  
+
+        .project-hero { 
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/resources/images/bruinshack.png");
+            height: 1185px; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 0px ;
+        }
+
+        .project-hero__text h2 { 
+            font-size: 64px; 
+            text-align: center;
+            color: #FFD90D; 
+        }
+        .project-hero__text h4 { 
+            font-size: 36px; 
+            text-align: center;
+            color: #fff; 
+        }
+
+
+  
+
+
 
 
 /* Introduction */
