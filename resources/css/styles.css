@@ -20,6 +20,17 @@ body {
     background-color: #282828;
 }
 
+ h2 { 
+    font-size: 64px; 
+    color: #FFD90D; 
+}
+
+h4 { 
+    font-weight: 300;
+    color: #fff; 
+    font-size: 36px;
+}
+
 /* 2. Navigation Bar 
 ======================================== */
 /* Navigation-Bar*/
@@ -59,56 +70,6 @@ nav .nav-container ul li a:any-link {
     color: #6E0A1F; 
     font-weight: 600;
 }
-
-        /* Navigation Bar Variant*/
-    
-        header.project-nav { 
-            background-color: transparent; 
-        }
-
-        header.project-nav img { 
-            filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
-        } 
-        
-        header.project-nav .nav-container ul li a:any-link { 
-            color: #FFD90D; 
-            text-decoration: none;
-        }
-        
-        header.project-nav .nav-container ul li a:hover { 
-            color: #ffffff; 
-            font-weight: 600;
-        }  
-
-        .project-hero { 
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/resources/images/bruinshack.png");
-            height: 1185px; 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: auto;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-right: 0px ;
-        }
-
-        .project-hero__text h2 { 
-            font-size: 64px; 
-            text-align: center;
-            color: #FFD90D; 
-        }
-        .project-hero__text h4 { 
-            font-size: 36px; 
-            text-align: center;
-            color: #fff; 
-        }
-
-
-  
-
-
-
 
 /* Introduction */
 .intro-container { 
@@ -265,7 +226,6 @@ footer {
     justify-content: center;
 }
 
-
 .footer-socials { 
 display: inline-flex;
 justify-content: center;
@@ -284,13 +244,60 @@ justify-content: center;
     width: 60px; 
 }
 
-.social-icon:hover { 
+/* .social-icon:hover { 
     filter: invert(14%) sepia(14%) saturate(6068%) hue-rotate(315deg) brightness(114%) contrast(118%); 
     width: 60px; 
-}
+} */
 
 .footer-text { 
     text-align: center; 
     color: #fff; 
     padding: 10px 0; 
 } 
+
+
+/* Project Page Styling*/
+    
+header.project-nav { 
+        background-color: transparent; 
+        display: block;
+}
+
+header.project-nav img { 
+     filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
+} 
+        
+header.project-nav .nav-container ul li a:any-link { 
+    color: #FFD90D; 
+    text-decoration: none;
+}
+        
+header.project-nav .nav-container ul li a:hover { 
+    color: #ffffff; 
+    font-weight: 600;
+}  
+
+.project-hero { 
+    height: 1185px; 
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 9, 0.8)), url("/resources/images/bruinshack-bw.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.project-hero__text { 
+    display: block; 
+    text-align: center;
+}
+
+.arrow { 
+    margin-bottom: 40px;
+}
