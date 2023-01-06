@@ -19,21 +19,37 @@
 body { 
     background-color: #282828;
 }
+.project-background { 
+    background-color: #fff;
+}
 
- h2 { 
+/* 2. Typography Styles
+======================================== */
+h1 { 
+    font-size: 128px;
+    color: #FFD90D; 
+    font-family: 'Bebas Neue';
+}
+
+h2 { 
     font-size: 64px; 
     color: #FFD90D; 
 }
 
-h4 { 
-    font-weight: 300;
-    color: #fff; 
+h3 { 
     font-size: 36px;
+    color: #fff; 
+    font-weight: 300;
 }
+
+p { 
+    font-size: 26px;
+    color: #fff;
+}
+
 
 /* 2. Navigation Bar 
 ======================================== */
-/* Navigation-Bar*/
 header { 
     width: 100%; 
     z-index: 1;
@@ -83,10 +99,8 @@ nav .nav-container ul li a:any-link {
 }
 
 .intro__text h1 { 
-    font-size: 48px; 
+    font-size: 64px; 
     text-align: left;
-    color: #FFD90D; 
-    font-weight: 600;
 }
 
 .intro__text h2 {
@@ -119,7 +133,6 @@ nav .nav-container ul li a:any-link {
   border-radius: 15px;
 }
 
-
 /* Projects Display */
 .card-container h3 { 
     color: white; 
@@ -127,6 +140,7 @@ nav .nav-container ul li a:any-link {
     font-weight: 100;
     text-align: center;
     margin-right: 1100px;
+    font-size: 16px;
 }
 
 .card-container h3::before { 
@@ -163,10 +177,11 @@ nav .nav-container ul li a:any-link {
 
 .card-item--text { 
     box-sizing: border-box; 
-    font-size: 16px;
     display: flex; 
     flex-direction: column;
     justify-content: center;
+
+
     padding: 32px 64px; 
     line-height: 50px; 
     color: #fff; 
@@ -255,19 +270,20 @@ justify-content: center;
     padding: 10px 0; 
 } 
 
+/* 2. Project Page Styling
+======================================== */
 
-/* Project Page Styling*/
-    
-header.project-nav { 
+/* Project Page Hero*/
+.project-nav { 
         background-color: transparent; 
         display: block;
 }
 
-header.project-nav img { 
+.project-nav img { 
      filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
 } 
         
-header.project-nav .nav-container ul li a:any-link { 
+.project-nav .nav-container ul li a:any-link { 
     color: #FFD90D; 
     text-decoration: none;
 }
@@ -278,17 +294,16 @@ header.project-nav .nav-container ul li a:hover {
 }  
 
 .project-hero { 
-    height: 1185px; 
+    height: 100vh; 
+    width:  100%; 
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 9, 0.8)), url("/resources/images/bruinshack-bw.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    position: relative;
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: space-between;
 }
@@ -299,5 +314,58 @@ header.project-nav .nav-container ul li a:hover {
 }
 
 .arrow { 
-    margin-bottom: 40px;
+    margin-bottom: 130px;
+}
+
+
+/* Project Page Section*/
+
+.project-section { 
+    display: flex;
+    width: 100%;
+     align-items: center;
+    justify-content: center;
+}
+
+.project-section__wrapper { 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ width: 1200px; 
+ margin-top: 83px;
+}
+
+.project-section h1 { 
+    color: black;
+    font-size: 72px;
+}
+
+.project-section h2 { 
+    color: black;
+    font-size: 36px;
+}
+
+.project-section p { 
+    color: black;
+    font-size: 26px;
+}
+
+.project-section ul li { 
+    font-size: 26px;
+    margin-left: 50px; 
+} 
+
+.bold { 
+    font-weight: 600;
+}
+
+div.separator { 
+    content: " "; 
+    width: 400px; 
+    height: 2px; 
+    vertical-align: top;
+    margin: 11px auto 0 auto; 
+    background: #FFD90D;
 }
