@@ -23,79 +23,124 @@ body {
     background-color: #fff;
 }
 
+html { 
+    font-size: 16px; 
+}
+
+section { 
+    display: flex;
+    justify-content: center;
+}
+
 /* 2. Typography Styles
 ======================================== */
 h1 { 
-    font-size: 128px;
+    font-size: 8rem;
     color: #FFD90D; 
     font-family: 'Bebas Neue';
 }
 
 h2 { 
-    font-size: 64px; 
+    font-size: 4rem; 
     color: #FFD90D; 
 }
 
 h3 { 
-    font-size: 36px;
+    font-size: 2.25rem;
     color: #fff; 
     font-weight: 300;
 }
 
 p { 
-    font-size: 26px;
+    font-size: 1.625rem;
     color: #fff;
 }
 
-
 /* 2. Navigation Bar 
 ======================================== */
+
 header { 
     width: 100%; 
     z-index: 1;
     position: sticky; 
-    top: 0; 
-    text-align: center;
+}
+.navbar { 
     background-color:  #FFD90D; 
+    color:#000; 
+    display: flex;
+    font-size: 1.5rem;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
-.nav-container img { 
-    display: block;
-    margin: 0 auto; 
+.logo { 
+    height: 120px;
 }
 
-.nav-container ul { 
-    display: block;
-    padding: 10px; 
-    margin-left: auto;
-    margin-right: auto; 
-    font-size: 24px;
+.nav-list { 
+    list-style-type: none;
 }
 
-nav .nav-container ul > li { 
-    display: inline-block; 
-    margin: 0px 32px; 
+.nav-list .list-item { 
+    display: inline-block;
+    padding: 20px 10px; 
 }
 
-nav .nav-container ul li a:any-link { 
-    color: #000; 
+.navbar a { 
+    color: #000;
     text-decoration: none;
 }
 
- nav .nav-container ul li a:hover { 
+.navbar a:hover { 
     color: #6E0A1F; 
     font-weight: 600;
 }
 
+.menu { 
+    display: none;
+}
+
+/* Responsive Navgation Bar*/ 
+@media all and (max-width: 658px) { 
+    .navbar { 
+        flex-direction: row;
+    }
+
+    .navbar > div {
+        padding: 10px 0px; 
+    }
+
+    .logo { 
+        height: 65px;
+    }
+
+    .nav-list { 
+        display: none;
+    }
+
+    .menu { 
+        display: block;
+        position: absolute;
+        right: 15px ; 
+        top: 15px; 
+    }
+}
+
+/* 3. Page Contents
+======================================== */
+
 /* Introduction */
 .intro-container { 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    align-items: center;
 }
 
 .intro__text { 
-    margin: 100px 0px;  
+    padding: 60px 15px;
+  
 }
 
 .intro__text h1 { 
@@ -126,12 +171,40 @@ nav .nav-container ul li a:any-link {
     font-weight: 600;
 }
 
+.intro__img { 
+    padding: 50px 0px; 
+}
+
 .intro__img img { 
- margin: 50px 0 0 50px; 
   height: auto; 
   width: 460px; 
   border-radius: 15px;
 }
+
+/* Responsive Introduction Components*/ 
+@media only screen and (max-width: 1215px) { 
+    .intro-container { 
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro__text { 
+        padding-bottom: 30px;
+    }
+
+    .intro__img { 
+        display: block;
+        padding: 0px;
+    }
+}
+
+@media all and (max-width: 645px)  { 
+    .intro__img { 
+        display: none;
+    }
+}
+
 
 /* Projects Display */
 .card-container h3 { 

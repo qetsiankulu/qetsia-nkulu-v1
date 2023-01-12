@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html> 
     <head> 
-        <title>Qetsia Nkulu - Front-End Engineer</title> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Qetsia Nkulu - Software Engineer</title> 
         <link href="resources/css/styles.css" rel="stylesheet"> 
 
-   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     </head>
     <body> 
 
         <!--Navigation Bar--> 
         <header> 
-            <nav>
-                <div class="nav-container">
-                        <a href="/index.html">
-                            <img src="/resources/images/Qetsia-Nkulu-logo.svg" alt="Qetsia Nkulu-logo" width="100">
-                        </a>
-
-                        <ul>
-                            <li><a href="#projects">Portfolio</a></li> 
-                            <li><a href="#">About</a></li>
-                            <li><a href="/resources/documents/Qetsia-Nkulu-Resume(Mock).pdf" target="_blank">Resume</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+            <nav class="navbar"> 
+                <div class="img-container"> 
+                    <a href="/index.html"> 
+                        <img src="/resources/images/Qetsia-Nkulu-logo.svg" alt="Qetsia Nkulu-logo" class="logo">
+                    </a>
                 </div>
-            </nav> 
+                <ul class="nav-list">
+                    <li class="list-item">
+                        <a href="#projects">Portfolio</a>
+                    </li> 
+                   <li class="list-item">
+                        <a href="#">About</a>
+                    </li>
+                   <li class="list-item">
+                        <a href="/resources/documents/Qetsia-Nkulu-Resume(Mock).pdf" target="_blank">Resume</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="menu img-container">
+                    <img src="/resources/icons/menu.svg">
+                </div>
+            </nav>
         </header>
 
        <!--Introduction --> 
@@ -42,12 +57,13 @@
                         <img src="/resources/images/qetsia-nkulu-headshot.jpeg" alt="Qetsia's Headshot"> 
                     </div>
                 </div>
-
-
             </section>
 
+
+
+
          <!--Projects Display-->
-        <section> 
+        <!-- <section> 
                 <div id="projects" class="card-container"> 
                     <h3>Featured Projects</h3>
                     <div class="card card-available"> 
@@ -64,10 +80,9 @@
                                 <a class="btn" href="/bruinshack.html"><span>View</span></a>
                             </div>
                         </div> 
-                    </div> 
+                    </div>  -->
 
-                      <!-- Project 2  -->
-                    <div class="card card-unavailable"> 
+                    <!-- <div class="card card-unavailable"> 
                         <div class="card-item card-item--visual"> 
                             <a href="">
                                 <img src='/resources/images/dept-of-ed.png' alt="Department of Education Logo">
@@ -83,7 +98,6 @@
                         </div> 
                     </div> 
 
-                      <!-- Project 3 -->
                       <div class="card card-unavailable"> 
                         <div class="card-item card-item--visual"> 
                             <a href="">
@@ -105,7 +119,7 @@
 
 
         <!--Site Footer-->
-        <footer class="site-footer">
+        <!-- <footer class="site-footer">
                     <ul class="footer-socials"> 
                         <li>
                             <a href="https://www.linkedin.com/in/qetsiankulu/" target="_blank" title="Qetsia Nkulu's Linkedin"> 
@@ -122,7 +136,7 @@
                 <div class="footer-text">
                             <div>Qetsia Nkulu © All Rights Reserved</div>
                   </div>
-        </footer> 
+        </footer>  -->
     </body>
 </html>
    
