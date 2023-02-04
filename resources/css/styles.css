@@ -1,19 +1,19 @@
 /* Site Stylesheet  
-  1. Global Styling  
-  2. Navigation Bar 
-  3. Tea of the Month
-  4. Locations
+  1. Universal Styling  
+  2. Typography Styles
+  3. Navigation Bar 
+  4. Home Page
   5. Contact
   6. Footer
 ======================================== */
 
-/* 1. Global Styling 
+/* 1. Universal Styling 
 ======================================== */
 * { 
     font-family: 'Inter'; 
     padding: 0; 
     margin: 0; 
-    box-sizing: border-box;   
+    box-sizing: border-box; 
 }
 
 body { 
@@ -31,6 +31,7 @@ section {
     display: flex;
     justify-content: center;
 }
+
 
 /* 2. Typography Styles
 ======================================== */
@@ -56,9 +57,8 @@ p {
     color: #fff;
 }
 
-/* 2. Navigation Bar 
+/* 3. Navigation Bar 
 ======================================== */
-
 header { 
     width: 100%; 
     z-index: 1;
@@ -77,7 +77,7 @@ header {
 }
 
 .logo { 
-    height: 120px;
+    height: 7.5rem;
 }
 
 .nav-list { 
@@ -86,7 +86,7 @@ header {
 
 .nav-list .list-item { 
     display: inline-block;
-    padding: 20px 10px; 
+    padding: 1.25rem 0.625rem; 
 }
 
 .navbar a { 
@@ -103,63 +103,36 @@ header {
     display: none;
 }
 
-/* Responsive Navgation Bar*/ 
-@media all and (max-width: 658px) { 
-    .navbar { 
-        flex-direction: row;
-    }
 
-    .navbar > div {
-        padding: 10px 0px; 
-    }
-
-    .logo { 
-        height: 65px;
-    }
-
-    .nav-list { 
-        display: none;
-    }
-
-    .menu { 
-        display: block;
-        position: absolute;
-        right: 15px ; 
-        top: 15px; 
-    }
-}
-
-/* 3. Page Contents
+/* 4. Home Page
 ======================================== */
 
 /* Introduction */
 .intro-container { 
     display: flex;
     align-items: center;
+    text-align: left;
 }
 
 .intro__text { 
-    padding: 60px 15px;
-  
+    padding: 3.75rem 0.9375rem;
 }
 
 .intro__text h1 { 
-    font-size: 64px; 
-    text-align: left;
+    font-size: 4rem; 
 }
 
 .intro__text h2 {
-    margin: 5px 0; 
-    font-size: 32px; 
-    font-weight: normal; 
-    text-align: left;
+    font-size: 2rem; 
+    font-weight: normal;
+
+    margin: 0.3125rem;  
     color: #ffffff; 
 }
 
 .intro__text p { 
-    margin-top: 20px; ;
-    text-align: left;
-    font-size: 24px; 
+    font-size: 1.5rem; 
+    margin-top: 1.25rem; 
 }
 
 .intro__text p > span { 
@@ -172,117 +145,106 @@ header {
 }
 
 .intro__img { 
-    padding: 50px 0px; 
+    padding: 3.125rem 0; 
 }
 
 .intro__img img { 
   height: auto; 
-  width: 460px; 
+  width: 28.75rem; 
   border-radius: 15px;
-}
-
-/* Responsive Introduction Components*/ 
-@media only screen and (max-width: 1215px) { 
-    .intro-container { 
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .intro__text { 
-        padding-bottom: 30px;
-    }
-
-    .intro__img { 
-        display: block;
-        padding: 0px;
-    }
-}
-
-@media all and (max-width: 645px)  { 
-    .intro__img { 
-        display: none;
-    }
 }
 
 
 /* Projects Display */
-.card-container h3 { 
+.display__text { 
     color: white; 
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     font-weight: 100;
-    text-align: center;
-    margin-right: 1100px;
-    font-size: 16px;
+    text-align: left;
+    font-size: 1rem;
 }
 
-.card-container h3::before { 
+ .display__text::before { 
     content: " "; 
     display: inline-block;
-    width: 30px; 
+    width: 1.875rem; 
     height: 1px; 
     vertical-align: top;
-    margin-top: 11px;
-    margin-right: 10px; 
+    margin-top: 0.6875rem; 
+    margin-right: 0.625rem; 
     background: #fff;
 }
 
 .card-container { 
-    display: block; 
-    padding: 0 20px; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+
+
+    padding: 0 1.25rem; 
     width: 100%; 
 }
 
 .card { 
     background-color: #000;
-    display: flex; 
-    width: 1000px; 
-    margin: 40px auto; 
-    border-radius: 30px; 
-    padding: 40px; 
+    display: flex;
+    border-radius: 1.875rem; 
+
+    margin: 1.75rem auto; 
+    width: 62.5rem; 
+    padding: 2.5rem; 
 } 
 
+.card-contents { 
+    display: flex;
+    flex-direction: row;
+}
+
+.card-item--visual { 
+    display: block; 
+    margin: 0 auto; 
+}
+
 .card-item--visual a > img { 
-    box-sizing: border-box;
     height: auto; 
-    width: 353px; 
+    width: 20rem;
+    margin: 0 auto; 
 }
 
 .card-item--text { 
-    box-sizing: border-box; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
-
-
-    padding: 32px 64px; 
-    line-height: 50px; 
     color: #fff; 
+    line-height: 3.125rem; 
+    
+
+    padding: 2rem 4rem; 
     text-align: left;
 }
 
-.card-item--text div h2 { 
-    font-size: 35px;
+.card-item--text h2 { 
+    font-size: 2.25rem;
 }
 
-.card-item--text div p { 
-    padding: 10px 0; 
-    font-size: 26px;
-    text-align: left;
-    line-height: 31px; 
+.card-item--text p { 
+    padding: 0.625rem 0; 
+    font-size: 1.625rem;
+    line-height: 2rem; 
+    font-weight: 400; ;
 }
 
-.card-item--text div p.project-type { 
+.card-item--text .project-type { 
     font-weight: bold; 
-    font-size: 17px;
+    font-size: 1rem;
 }
 
  .btn { 
    background-color: #FFD90D;
    color: #000; 
    text-decoration: none;
-   border-radius: 8px;
-   padding: 16px 32px; 
+   border-radius: 0.5rem;
+   padding: 1rem 2rem; 
    font-weight: 600; 
 } 
 
@@ -296,54 +258,45 @@ header {
     color:#FFD90D; 
 }
 
-  /* Styles for Unavailable Projects */ 
-div.card-unavailable .card-item--visual img, div.card-unavailable .card-item--text .btn { 
+/* Styles for Unavailable Projects */ 
+div.card-unavailable .card-item--visual img, 
+div.card-unavailable .card-item--text .btn { 
     filter: brightness(50%);
 }
 
-
 /* Site-Footer */
 footer {
-    margin: 30px 0; ; 
-    top: 145px; 
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    height: 100%; 
     width: 100%;
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.footer-socials { 
-display: inline-flex;
-justify-content: center;
+.footer-list { 
+    display: inline-flex;
+    justify-content: center;
 }
 
-
-.footer-socials li { 
-    padding: 0px 10px;  
-    margin: 10px 5px; 
+.footer-list .list-item{ 
+    padding: 0px 0.625rem;  
+    margin: 0.625rem 0.3125rem; 
     list-style-type: none;
-
 }
 
 .social-icon { 
     filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
-    width: 60px; 
+    height: 3.75rem; 
 }
-
-/* .social-icon:hover { 
-    filter: invert(14%) sepia(14%) saturate(6068%) hue-rotate(315deg) brightness(114%) contrast(118%); 
-    width: 60px; 
-} */
 
 .footer-text { 
     text-align: center; 
     color: #fff; 
-    padding: 10px 0; 
+    padding: 0.625rem  0; 
 } 
 
-/* 2. Project Page Styling
+
+
+/* 5. Project Page Styling
 ======================================== */
 
 /* Project Page Hero*/
@@ -441,4 +394,424 @@ div.separator {
     vertical-align: top;
     margin: 11px auto 0 auto; 
     background: #FFD90D;
+}
+
+
+/* 6. Responsive CSS 
+======================================== */
+
+/* Responsive Navgation Bar*/ 
+@media all and (max-width: 658px) { 
+    header { 
+        width: 100%; 
+        z-index: 1;
+        position: sticky; 
+    }
+
+    .navbar { 
+        flex-direction: row;
+    }
+
+    .navbar > div {
+        padding: 0.625rem 0rem; 
+    }
+
+    .logo { 
+        height: 4.0625rem;
+    }
+
+    .nav-list { 
+        display: none;
+    }
+
+    .menu { 
+        display: block;
+        position: absolute;
+        right: 0.9375rem ; 
+        top: 0.625rem; 
+    }
+}
+
+/* Responsive Page Content*/ 
+
+@media only screen and (max-width: 1225px)  {
+
+    .intro-container { 
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .intro__text { 
+        padding-bottom: 1.875rem;
+    }
+
+    .intro__img { 
+        display: none;
+    }
+
+    .intro__text h1 { 
+        font-size: 5.25rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.5rem; 
+        margin: 0; /* random margin:5 without this don't get why*/
+    }
+    
+    .intro__text p { 
+        font-size: 1.5rem; 
+    }
+
+    .display__text { 
+        font-size: 1.2rem;
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 39.5rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        height: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2.25rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.625rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.3rem;
+    }
+    
+    .btn { 
+     display: none; 
+   } 
+}
+
+
+@media only screen and (max-width: 952px) {
+    .intro__text h1 { 
+        font-size: 5rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.45rem; 
+        margin: 0; 
+    }
+    
+    .intro__text p { 
+        font-size: 1.3rem; 
+    }
+
+    .display__text { 
+        font-size: 1.2rem;
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 33.5rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2.25rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.625rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.3rem;
+    }
+} 
+
+@media only screen and (max-width: 952px) {
+    .intro__text h1 { 
+        font-size: 5rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.4rem; 
+        margin: 0; 
+    }
+    
+    .intro__text p { 
+        font-size: 1.3rem; 
+    }
+
+    .display__text { 
+        font-size: 1.2rem;
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 33.5rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2.25rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.625rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.3rem;
+    }
+} 
+
+@media only screen and (max-width: 909px) {
+    .intro__text h1 { 
+        font-size: 4.75rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.35rem; 
+        margin: 0; 
+    }
+    
+    .intro__text p { 
+        font-size: 1.3rem; 
+    }
+
+    .display__text { 
+        font-size: 1.2rem;
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 32.5rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.6rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.25rem;
+    }
+} 
+
+@media only screen and (max-width: 867px) {
+    .intro__text h1 { 
+        font-size: 4.5rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.3rem; 
+        margin: 0; 
+    }
+} 
+
+
+@media only screen and (max-width: 841px) {
+    .intro__text h1 { 
+        font-size: 4.25rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.25rem; 
+        margin: 0; 
+    }
+
+}
+
+
+@media only screen and (max-width: 825px) {
+    .intro__text h1 { 
+        font-size: 4.2rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.2rem; 
+        margin: 0; 
+    }
+
+}
+
+@media only screen and (max-width: 806px) {
+    .intro__text h1 { 
+        font-size: 4.15rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.15rem; 
+        margin: 0; 
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 32rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.6rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.25rem;
+    }
+
+}
+
+@media only screen and (max-width: 778px) {
+    .intro__text h1 { 
+        font-size: 4.1rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 2.1rem; 
+        margin: 0; 
+    }
+
+    .card { 
+        margin: 3rem auto;
+        width: 31.75rem; 
+        padding: 2.5rem; 
+    }
+
+    .card-contents { 
+        flex-direction: column;
+    
+    }
+
+    .card-item--visual a > img { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .card-item--text { 
+        width: 100%;
+        padding: 1rem 1rem; 
+        line-height: 3.125rem; 
+        text-align: center;
+    }
+
+    .card-item--text h2 { 
+        font-size: 2rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.6rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Responsive Footer*/ 
+@media only screen and (max-width: 658px) { 
+    .social-icon { 
+        height: 2.75rem; 
+    }
+}
+
+@media only screen and (max-width: 225px) { 
+    footer .footer-list { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
