@@ -716,7 +716,6 @@ div.separator {
         font-size: 1.1rem; 
     }
 
-
     .card { 
         margin: 3rem auto;
         width: 26.725rem; 
@@ -736,7 +735,15 @@ div.separator {
     }
 }
 
+@media only screen and (max-width: 658px) { 
+    .intro__text { 
+        padding: 2.25rem 0.9375rem  2.25rem ;
+    }
 
+    .card { 
+       margin-top: 2rem;
+    }
+}
 
 @media only screen and (max-width: 634px) { 
     .intro__text h1 { 
@@ -747,6 +754,10 @@ div.separator {
         font-size: 1.35rem; 
         margin: 0; 
     }
+
+    .card { 
+        margin-top: 1.75rem;
+     }
 } 
 
 @media only screen and (max-width: 617px) { 
@@ -814,6 +825,7 @@ div.separator {
 
     .card { 
         width: 24rem; 
+        margin-top: 1.25rem;
     }
 
     .card-item--text h2 { 
@@ -833,11 +845,19 @@ div.separator {
     .intro__text h1 { 
         font-size: 2.65em; 
     }
+
+    .card { 
+        margin-top: 1.165rem;
+    }
 }
 
 @media only screen and (max-width: 511px) { 
     .intro__text h1 { 
         font-size: 2.45em; 
+    }
+
+    .card { 
+        margin-top: 1rem;
     }
 
 }
@@ -863,27 +883,27 @@ div.separator {
     .card-item--text p { 
         font-size: 1.265rem;
     }
-    
-    .card-item--text .project-type { 
-        font-size: 0.825rem;
-    }
 } 
 
-
 @media only screen and (max-width: 468px) { 
+    .intro__text { 
+        padding: 2.25rem 0.9375rem 1rem;
+    }
     .intro__text h1 { 
         font-size: 2.35rem; 
     }
     .intro__text h2 {
-        font-size: 0.925rem; 
+        font-size: 0.975rem; 
     }
 
     .card { 
-        width: 22.5rem; 
+        width: 20.5rem; 
+        margin-top: .85rem; 
+        padding: 2rem; 
     }
 
     .card-item--text { 
-        line-height: 2rem; 
+        line-height: 2.725rem; 
     }
 
     .card-item--text h2 { 
@@ -891,11 +911,7 @@ div.separator {
     }
     
     .card-item--text p { 
-        font-size: 1.1rem;
-    }
-    
-    .card-item--text .project-type { 
-        font-size: 0.825rem;
+        font-size: .95rem;
     }
 }
 
@@ -908,11 +924,12 @@ div.separator {
 
 @media only screen and (max-width: 435px) { 
     .intro__text h1 { 
-        font-size: 1.725em; 
+        font-size: 2.125em; 
     }
 
     .intro__text p { 
         margin-top: .5rem; 
+        font-size: .75rem; 
     }
 
     .card { 
@@ -921,7 +938,7 @@ div.separator {
     }
 
     .card-item--text h2 { 
-        font-size: 1.185rem;
+        font-size: 1.225rem;
     }
     
     .card-item--text p { 
@@ -930,53 +947,198 @@ div.separator {
     }
     
     .card-item--text .project-type { 
-        font-size: 0.825rem;
+        font-size: 0.785rem;
     }
 }
 
 
 @media only screen and (max-width: 420px) { 
     .intro__text h1 { 
-        font-size: 1.725em; 
-    }
-
-    .intro__text p { 
-        margin-top: .5rem; 
+        font-size: 2.1rem; 
     }
 
     .card { 
-        width: 18rem; 
-        margin: 1.75rem auto 1rem auto; 
-    }
-
-    .card-item--text h2 { 
-        font-size: 1rem;
-    }
-    
-    .card-item--text p { 
-        font-size: 0.75rem;
-        line-height: 1.65rem; 
+        width: 19.525rem; 
     }
     
     .card-item--text .project-type { 
-        font-size: 0.525rem;
+        font-size: 0.635rem;
+    }
+}
+
+@media only screen and (max-width: 386px) { 
+    .intro__text h1 { 
+        font-size: 1.9rem; 
+    }
+
+    .intro__text h2 {
+        font-size: 0.925rem; 
+    }
+
+    .intro__text p { 
+        font-size: .65rem; 
+    }
+
+    .card { 
+        width: 18.925rem; 
+        margin-top: .75rem; 
+    }
+    
+    .card-item--text p { 
+        font-size: 0.85rem; 
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.565rem;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 369px) { 
+    .card { 
+        width: 17.125rem; 
+        margin-top: .75rem; 
+    }
+
+    .card-item--text { 
+        line-height: 2rem; 
+    }
+
+
+    .card-item--text h2 { 
+        font-size: 1.075rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.8rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.625rem;
+    }
+}
+
+
+@media only screen and (max-width: 355px) { 
+    .intro__text h1 { 
+        font-size: 1.825rem; 
+    }
+
+    .intro__text h2 {
+        font-size: 0.9rem; 
+    }
+
+    .intro__text p { 
+        font-size: .6rem; 
+    }
+
+    .card { 
+        width: 17rem; 
+        margin-top: .75rem; 
+    }
+
+    .card-item--text { 
+        line-height: 1rem; 
+    }
+
+
+    .card-item--text h2 { 
+        font-size: .980rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.825rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 347px) { 
+    .intro__text h1 { 
+        font-size: 1.765rem; 
+    }
+
+    .intro__text h2 {
+        font-size: 0.855rem; 
+    }
+
+    .intro__text p { 
+        font-size: .585rem; 
+    }
+
+    .card { 
+        width: 16.825rem; 
+        margin-top: .75rem; 
+    }
+
+    .card-item--text { 
+        line-height: 1rem; 
+    }
+
+
+    .card-item--text h2 { 
+        font-size: .975rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.725rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 334px) { 
+    .intro__text h1 { 
+        font-size: 1.685rem; 
+    }
+
+    .intro__text h2 {
+        font-size: 0.825rem; 
+    }
+
+    .intro__text p { 
+        font-size: .585rem; 
+    }
+
+    .card { 
+        width: 16.225rem; 
+        margin-top: .75rem; 
+    }
+
+    .card-item--text { 
+        line-height: 1rem; 
+    }
+
+
+    .card-item--text h2 { 
+        font-size: .975rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.725rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.6rem;
     }
 }
 
 
 
-@media only screen and (max-width: 320px) { 
+
+
+
+/* @media only screen and (max-width: 320px) { 
     .intro__text h1 { 
         font-size: 1.25em; 
     }
 
     .intro__text h2 {
         font-size: 0.725rem; 
-    }
-
-    .intro__text p { 
-        font-size: .65rem;
-        margin-top: .5rem; 
     }
 
     .card { 
@@ -997,7 +1159,7 @@ div.separator {
     .card-item--text .project-type { 
         font-size: 0.525rem;
     }
-}
+} */
 
 
 
