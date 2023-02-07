@@ -698,6 +698,7 @@ div.separator {
 @media only screen and (max-width: 724px) {
     .intro__text p { 
         font-size: 1.1rem; 
+        margin-top: 1rem; 
     }
 }
 
@@ -782,6 +783,10 @@ div.separator {
     .intro__text h2 {
         font-size: 1.235rem; 
     }
+
+    .intro__text p { 
+        margin-top: .75rem; 
+    }
 } 
 
 @media only screen and (max-width: 592px) { 
@@ -803,6 +808,10 @@ div.separator {
         font-size: 1.185rem; 
     }
 
+    .intro__text p { 
+        font-size: .85rem; 
+    }
+
     .card { 
         width: 24rem; 
     }
@@ -818,13 +827,177 @@ div.separator {
     .card-item--text .project-type { 
         font-size: 0.825rem;
     }
+} 
+
+@media only screen and (max-width: 562px) { 
+    .intro__text h1 { 
+        font-size: 2.65em; 
+    }
+}
+
+@media only screen and (max-width: 511px) { 
+    .intro__text h1 { 
+        font-size: 2.45em; 
+    }
+
+}
 
 
+@media only screen and (max-width: 479px) { 
+    .intro__text h1 { 
+        font-size: 2.4rem; 
+    }
+    
+    .intro__text h2 {
+        font-size: 1.15rem; 
+    }
 
+    .card { 
+        width: 23.5rem; 
+    }
+
+    .card-item--text h2 { 
+        font-size: 1.425rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.265rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.825rem;
+    }
 } 
 
 
+@media only screen and (max-width: 468px) { 
+    .intro__text h1 { 
+        font-size: 2.35rem; 
+    }
+    .intro__text h2 {
+        font-size: 0.925rem; 
+    }
 
+    .card { 
+        width: 22.5rem; 
+    }
+
+    .card-item--text { 
+        line-height: 2rem; 
+    }
+
+    .card-item--text h2 { 
+        font-size: 1.27rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 1.1rem;
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.825rem;
+    }
+}
+
+
+@media only screen and (max-width: 459px) { 
+    .intro__text h1 { 
+        font-size: 2.2em; 
+    }
+}
+
+@media only screen and (max-width: 435px) { 
+    .intro__text h1 { 
+        font-size: 1.725em; 
+    }
+
+    .intro__text p { 
+        margin-top: .5rem; 
+    }
+
+    .card { 
+        width: 20rem; 
+        margin: 1.75rem auto 1rem auto; 
+    }
+
+    .card-item--text h2 { 
+        font-size: 1.185rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.95rem;
+        line-height: 1.65rem; 
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.825rem;
+    }
+}
+
+
+@media only screen and (max-width: 420px) { 
+    .intro__text h1 { 
+        font-size: 1.725em; 
+    }
+
+    .intro__text p { 
+        margin-top: .5rem; 
+    }
+
+    .card { 
+        width: 18rem; 
+        margin: 1.75rem auto 1rem auto; 
+    }
+
+    .card-item--text h2 { 
+        font-size: 1rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.75rem;
+        line-height: 1.65rem; 
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.525rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 320px) { 
+    .intro__text h1 { 
+        font-size: 1.25em; 
+    }
+
+    .intro__text h2 {
+        font-size: 0.725rem; 
+    }
+
+    .intro__text p { 
+        font-size: .65rem;
+        margin-top: .5rem; 
+    }
+
+    .card { 
+        width: 16.35rem; 
+        margin: 1.75rem auto 1rem auto; 
+        padding: 1.725
+    }
+
+    .card-item--text h2 { 
+        font-size: .75rem;
+    }
+    
+    .card-item--text p { 
+        font-size: 0.65rem;
+        line-height: 1.1rem; 
+    }
+    
+    .card-item--text .project-type { 
+        font-size: 0.525rem;
+    }
+}
 
 
 
