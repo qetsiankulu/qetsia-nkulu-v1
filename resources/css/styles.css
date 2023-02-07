@@ -1025,6 +1025,10 @@ div.separator {
         margin: 0; 
     }
 
+    .card { 
+        margin: 2rem auto;
+    }
+
     .intro__text p { 
         font-size: 1.1rem; 
     }
