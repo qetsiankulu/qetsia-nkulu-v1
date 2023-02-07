@@ -938,11 +938,11 @@ div.separator {
     }
 
     .card-item--text h2 { 
-        font-size: 1.225rem;
+        font-size: 1.275rem;
     }
     
     .card-item--text p { 
-        font-size: 0.95rem;
+        font-size: 1.125rem;
         line-height: 1.65rem; 
     }
     
@@ -983,9 +983,13 @@ div.separator {
         width: 18.925rem; 
         margin-top: .75rem; 
     }
+
+    .card-item--text h2 { 
+        font-size: 1.25rem;
+    }
     
     .card-item--text p { 
-        font-size: 0.85rem; 
+        font-size: 1.075rem;
     }
     
     .card-item--text .project-type { 
@@ -996,7 +1000,7 @@ div.separator {
 
 @media only screen and (max-width: 369px) { 
     .card { 
-        width: 17.125rem; 
+        width: 18.25rem; 
         margin-top: .75rem; 
     }
 
@@ -1006,15 +1010,15 @@ div.separator {
 
 
     .card-item--text h2 { 
-        font-size: 1.075rem;
+        font-size: 1.175rem;
     }
     
     .card-item--text p { 
-        font-size: 0.8rem;
+        font-size: 1.075rem;
     }
     
     .card-item--text .project-type { 
-        font-size: 0.625rem;
+        font-size: 0.485rem;
     }
 }
 
@@ -1033,26 +1037,26 @@ div.separator {
     }
 
     .card { 
-        width: 17rem; 
+        width: 18rem; 
         margin-top: .75rem; 
     }
 
     .card-item--text { 
-        line-height: 1rem; 
+        line-height: 1.85rem; 
     }
 
 
     .card-item--text h2 { 
-        font-size: .980rem;
+        font-size: 1.125rem;
     }
     
     .card-item--text p { 
-        font-size: 0.825rem;
+        font-size: .95rem;
     }
     
     .card-item--text .project-type { 
-        font-size: 0.6rem;
-    }
+        font-size: 0.445rem;
+}
 }
 
 @media only screen and (max-width: 347px) { 
@@ -1069,26 +1073,23 @@ div.separator {
     }
 
     .card { 
-        width: 16.825rem; 
+        width: 17.825rem; 
         margin-top: .75rem; 
     }
 
-    .card-item--text { 
-        line-height: 1rem; 
-    }
-
-
     .card-item--text h2 { 
-        font-size: .975rem;
+        font-size: 1.1rem;
     }
     
     .card-item--text p { 
-        font-size: 0.725rem;
+        font-size: .90rem;
     }
     
     .card-item--text .project-type { 
-        font-size: 0.6rem;
-    }
+        font-size: 0.425rem;
+}
+
+
 }
 
 @media only screen and (max-width: 334px) { 
@@ -1105,25 +1106,20 @@ div.separator {
     }
 
     .card { 
-        width: 16.225rem; 
+        width: 17.625rem; 
         margin-top: .75rem; 
     }
 
-    .card-item--text { 
-        line-height: 1rem; 
-    }
-
-
     .card-item--text h2 { 
-        font-size: .975rem;
+        font-size: .925rem;
     }
     
     .card-item--text p { 
-        font-size: 0.725rem;
+        font-size: .85rem;
     }
     
     .card-item--text .project-type { 
-        font-size: 0.6rem;
+        font-size: 0.395rem;
     }
 }
 
