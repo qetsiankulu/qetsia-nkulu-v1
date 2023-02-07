@@ -282,7 +282,7 @@ footer {
 }
 
 .footer-list .list-item{ 
-    padding: 0px 0.625rem;  
+    padding: 0px;  
     margin: 0.625rem 0.3125rem; 
     list-style-type: none;
 }
@@ -296,6 +296,7 @@ footer {
     text-align: center; 
     color: #fff; 
     padding: 0.625rem  0; 
+    font-size: .75rem; 
 } 
 
 
@@ -1163,11 +1164,35 @@ div.separator {
 
 
 /* Responsive Footer*/ 
-@media only screen and (max-width: 658px) { 
+
+@media only screen and (max-width: 952px) { 
     .social-icon { 
-        height: 2.75rem; 
+        height: 3.5rem; 
+    }
+
+    .footer-text { 
+        font-size: .7rem; 
+    } 
+}
+
+
+@media only screen and (max-width: 768px) { 
+    .social-icon { 
+        height: 2.5rem; 
     }
 }
+
+@media only screen and (max-width: 425px) { 
+    .social-icon { 
+        height: 2rem; 
+    }
+
+    .footer-text { 
+        padding: 0.62rem  0; 
+    } 
+}
+
+
 
 @media only screen and (max-width: 225px) { 
     footer .footer-list { 
