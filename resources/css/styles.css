@@ -172,9 +172,9 @@ header {
     color: white; 
     padding-top: 0.9375rem;
     font-weight: 100;
-    font-size: 1rem;
-    position: relative;
-    right: 401px; 
+    font-size: 1.2rem;
+    position: relative; 
+    right: 25rem; 
 }
 
  .display__text::before { 
@@ -506,6 +506,7 @@ div.separator {
 
     .display__text { 
         font-size: 1.2rem;
+        right: 22rem; 
     }
 
     .card { 
@@ -553,7 +554,7 @@ div.separator {
 @media only screen and (max-width: 952px) {
 
     .intro__text { 
-        padding: 3.75rem 1.95rem 0rem 1.95rem; 
+        padding: 3.75rem 1.95rem 2rem 1.95rem; 
     }
 
 
@@ -571,7 +572,7 @@ div.separator {
     }
 
     .display__text { 
-        font-size: 1.1rem;
+        right: 20rem; 
     }
 
     .card { 
@@ -595,6 +596,10 @@ div.separator {
     
     .intro__text p { 
         font-size: 1.3rem; 
+    }
+
+    .display__text { 
+        right: 19rem; 
     }
 
     .card { 
@@ -627,12 +632,26 @@ div.separator {
     .intro__text h1 { 
         font-size: 4.5rem; 
     }
+
+    .display__text { 
+        right: 18rem; 
+        font-size: 1.175rem;
+    }
 } 
 
 
 @media only screen and (max-width: 841px) {
     .intro__text h1 { 
         font-size: 4.25rem; 
+    }
+
+    .display__text::before { 
+        width: 1.86rem; 
+    }
+
+    .display__text { 
+        right: 16.58rem; 
+        font-size: 1.175rem;
     }
 }
 
@@ -651,6 +670,11 @@ div.separator {
     .intro__text h2 {
         font-size: 1.85rem; 
         margin: 0; 
+    }
+
+    .display__text { 
+        right: 16rem; 
+        font-size: 1.165rem;
     }
 
     .card { 
