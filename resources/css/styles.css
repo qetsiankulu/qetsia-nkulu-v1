@@ -446,7 +446,7 @@ div.separator {
         justify-content: center;
         align-items: center;
         background: #FFD90D;
-        transition: top 1s ease;
+        transition: top 1s ease 0s;
 
         display: none;
         font-size: 2.5rem;
@@ -635,7 +635,7 @@ div.separator {
 
     .display__text { 
         right: 18rem; 
-        font-size: 1.175rem;
+        font-size: 1.155rem;
     }
 } 
 
@@ -651,7 +651,6 @@ div.separator {
 
     .display__text { 
         right: 16.58rem; 
-        font-size: 1.175rem;
     }
 }
 
@@ -659,6 +658,10 @@ div.separator {
 @media only screen and (max-width: 825px) {
     .intro__text h1 { 
         font-size: 4.2rem; 
+    }
+    .display__text { 
+        right: 16.35rem; 
+        font-size: 1.165rem;
     }
 }
 
@@ -674,7 +677,6 @@ div.separator {
 
     .display__text { 
         right: 16rem; 
-        font-size: 1.165rem;
     }
 
     .card { 
@@ -695,6 +697,11 @@ div.separator {
 }
 
 @media only screen and (max-width: 788px) {
+    .display__text { 
+        right: 16rem; 
+        font-size: 1.135rem;
+    }
+
     .card { 
         width: 31.75rem; 
     }
@@ -727,7 +734,8 @@ div.separator {
     }
 
     .display__text { 
-        font-size: 1rem;
+        right: 16rem; 
+        font-size: 1.135rem;
     }
 
     .card { 
@@ -756,12 +764,21 @@ div.separator {
         font-size: 1.5rem; 
         margin: 0; 
     }
+
+    .display__text { 
+        right: 13.475rem; 
+        font-size: 1.125rem;
+    }
 }
 
 @media only screen and (max-width: 724px) {
     .intro__text p { 
         font-size: 1.1rem; 
         margin-top: 1rem; 
+    }
+
+    .display__text { 
+        font-size: 1.105rem;
     }
 }
 
@@ -777,6 +794,11 @@ div.separator {
 
     .intro__text p { 
         font-size: 1.1rem; 
+    }
+
+    .display__text { 
+        right: 12.75rem;
+        font-size: 1.05rem;
     }
 
     .card { 
@@ -801,6 +823,11 @@ div.separator {
 @media only screen and (max-width: 658px) { 
     .intro__text { 
         padding: 2.25rem 0.9375rem  2.25rem ;
+    }
+
+    .display__text { 
+        right: 11.95rem;
+        font-size: 1rem;
     }
 
     .card { 
@@ -832,6 +859,11 @@ div.separator {
         font-size: 1.275rem;  
     }
 
+    .display__text { 
+        right: 11.65rem;
+        font-size: .9625rem;
+    }
+
     .card { 
         width: 24.75rem; 
     }
@@ -861,6 +893,11 @@ div.separator {
     .intro__text p { 
         margin-top: .75rem; 
     }
+
+    .display__text { 
+        right: 10.725rem;
+        font-size: .96rem;
+    }
 } 
 
 @media only screen and (max-width: 592px) { 
@@ -870,6 +907,11 @@ div.separator {
     
     .intro__text h2 {
         font-size: 1.2rem; 
+    }
+
+    .display__text { 
+        right: 10.725rem;
+        font-size: .96rem;
     }
 } 
 
@@ -886,9 +928,21 @@ div.separator {
         font-size: .85rem; 
     }
 
+    .display__text { 
+        right: 9.85rem;
+        font-size: .85rem;
+    }
+
+    .display__text::before { 
+        width: 1.6rem; 
+        height: 1px; 
+        margin-top: 0.62rem; 
+        margin-right: 0.62rem; 
+    }
+
     .card { 
         width: 24rem; 
-        margin-top: 1.25rem;
+        /* margin-top: 1.25rem; */
     }
 
     .card-item--text h2 { 
@@ -904,25 +958,23 @@ div.separator {
     }
 } 
 
-@media only screen and (max-width: 562px) { 
-    .intro__text h1 { 
-        font-size: 2.65em; 
-    }
-
-    .card { 
-        margin-top: 1.165rem;
-    }
-}
 
 @media only screen and (max-width: 511px) { 
     .intro__text h1 { 
         font-size: 2.45em; 
     }
 
-    .card { 
-        margin-top: 1rem;
+    .display__text { 
+        right: 8.95rem;
+        font-size: .80rem;
     }
 
+    .display__text::before { 
+        width: 1.45rem; 
+        height: 1px; 
+        margin-top: 0.55rem; 
+        margin-right: 0.55rem; 
+    }
 }
 
 
@@ -933,6 +985,11 @@ div.separator {
     
     .intro__text h2 {
         font-size: 1.15rem; 
+    }
+
+    .display__text { 
+        right: 8.45rem;
+        font-size: .785rem;
     }
 
     .card { 
@@ -959,9 +1016,13 @@ div.separator {
         font-size: 0.975rem; 
     }
 
+    .display__text { 
+        right: 8.25rem;
+        font-size: .765rem;
+    }
+
     .card { 
         width: 20.5rem; 
-        margin-top: .85rem; 
         padding: 2rem; 
     }
 
@@ -983,6 +1044,11 @@ div.separator {
     .intro__text h1 { 
         font-size: 2.2em; 
     }
+
+    .display__text { 
+        right: 7.20rem;
+        font-size: .78rem;
+    }
 }
 
 @media only screen and (max-width: 435px) { 
@@ -995,9 +1061,20 @@ div.separator {
         font-size: .75rem; 
     }
 
+    .display__text::before { 
+        width: 1.2rem; 
+        height: 1px; 
+        margin-top: 0.45rem; 
+        margin-right: 0.45rem; 
+    }
+
+    .display__text { 
+        right: 7.55rem;
+        font-size: .68rem;
+    }
+
     .card { 
-        width: 20rem; 
-        margin: 1.75rem auto 1rem auto; 
+        width: 20rem;  
     }
 
     .card-item--text h2 { 
@@ -1018,6 +1095,11 @@ div.separator {
 @media only screen and (max-width: 420px) { 
     .intro__text h1 { 
         font-size: 2.1rem; 
+    }
+
+    .display__text { 
+        right: 7.5rem;
+        font-size: .68rem;
     }
 
     .card { 
@@ -1042,9 +1124,13 @@ div.separator {
         font-size: .65rem; 
     }
 
+    .display__text { 
+        right: 6.67rem;
+        font-size: .62rem;
+    }
+
     .card { 
         width: 18.925rem; 
-        margin-top: .75rem; 
     }
 
     .card-item--text h2 { 
@@ -1062,9 +1148,13 @@ div.separator {
 }
 
 @media only screen and (max-width: 369px) { 
+    .display__text { 
+        right: 6.67rem;
+        font-size: .62rem;
+    }
+    
     .card { 
         width: 18.25rem; 
-        margin-top: .75rem; 
     }
 
     .card-item--text { 
@@ -1101,7 +1191,6 @@ div.separator {
 
     .card { 
         width: 18rem; 
-        margin-top: .75rem; 
     }
 
     .card-item--text { 
@@ -1135,9 +1224,13 @@ div.separator {
         font-size: .585rem; 
     }
 
+    .display__text { 
+        right: 6rem;
+        font-size: .58rem;
+    }
+
     .card { 
         width: 17.825rem; 
-        margin-top: .75rem; 
     }
 
     .card-item--text h2 { 
@@ -1151,7 +1244,6 @@ div.separator {
     .card-item--text .project-type { 
         font-size: 0.425rem;
 }
-
 
 }
 
@@ -1168,9 +1260,13 @@ div.separator {
         font-size: .585rem; 
     }
 
+    .display__text { 
+        right: 5.78rem;
+        font-size: .58rem;
+    }
+
     .card { 
         width: 17.625rem; 
-        margin-top: .75rem; 
     }
 
     .card-item--text h2 { 
