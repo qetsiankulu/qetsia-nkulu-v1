@@ -35,16 +35,6 @@ section {
 
 /* 2. Typography Styles
 ======================================== */
-@font-face {
-    font-family:'Bebas Neue';
-    src: url('bebasneue-regular-webfont.woff2') format('woff2'),
-         url('bebasneue-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 h1 { 
     font-size: 8rem;
     color: #FFD90D; 
@@ -116,7 +106,6 @@ header {
 
 /* 4. Home Page
 ======================================== */
-
 /* Introduction */
 .intro-container { 
     display: flex;
@@ -1130,44 +1119,6 @@ div.separator {
         font-size: 0.395rem;
     }
 }
-
-
-
-
-
-
-/* @media only screen and (max-width: 320px) { 
-    .intro__text h1 { 
-        font-size: 1.25em; 
-    }
-
-    .intro__text h2 {
-        font-size: 0.725rem; 
-    }
-
-    .card { 
-        width: 16.35rem; 
-        margin: 1.75rem auto 1rem auto; 
-        padding: 1.725
-    }
-
-    .card-item--text h2 { 
-        font-size: .75rem;
-    }
-    
-    .card-item--text p { 
-        font-size: 0.65rem;
-        line-height: 1.1rem; 
-    }
-    
-    .card-item--text .project-type { 
-        font-size: 0.525rem;
-    }
-} */
-
-
-
-
 
 
 /* Responsive Footer*/ 
