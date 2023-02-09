@@ -208,6 +208,7 @@ header {
     padding: 2.5rem; 
 } 
 
+
 .card-contents { 
     display: flex;
     flex-direction: row;
@@ -513,7 +514,18 @@ div.separator {
         margin: 3rem auto;
         width: 39.5rem; 
         padding: 2.5rem; 
+         position: relative;
     }
+
+
+    .card a::before { 
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+}
 
     .card-contents { 
         flex-direction: column;
