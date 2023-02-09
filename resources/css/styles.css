@@ -17,9 +17,8 @@
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url(/resources/fonts/bebasneue-regular-webfont.woff2) format('woff2'),
-         url(/resources/fonts/bebasneue-regular-webfont.woff) format('woff'), url(/resources/fonts/BebasNeue-Regular.ttf) format(truetype) ;
+    font-family: 'BebasNeue';
+    src: url(https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2'); 
     font-weight: normal;
     font-style: normal;
 
@@ -50,7 +49,7 @@ main
 h1 { 
     font-size: 8rem;
     color: #FFD90D; 
-    font-family: 'Bebas Neue';
+    font-family: 'BebasNeue', sans-serif;
 }
 
 h2 { 
@@ -921,7 +920,7 @@ div.separator {
 
     .display__text { 
         right: 10.725rem;
-        font-size: .96rem;
+        font-size: 1.267rem;
     }
 } 
 
@@ -940,7 +939,7 @@ div.separator {
 
     .display__text { 
         right: 9.85rem;
-        font-size: .85rem;
+        font-size: 1.2rem;
     }
 
     .display__text::before { 
@@ -976,7 +975,7 @@ div.separator {
 
     .display__text { 
         right: 8.95rem;
-        font-size: .80rem;
+        font-size: 1rem;
     }
 
     .display__text::before { 
@@ -999,7 +998,7 @@ div.separator {
 
     .display__text { 
         right: 8.45rem;
-        font-size: .785rem;
+        font-size: .987rem;
     }
 
     .card { 
@@ -1028,7 +1027,7 @@ div.separator {
 
     .display__text { 
         right: 8.25rem;
-        font-size: .765rem;
+        font-size: .925rem;
     }
 
     .card { 
@@ -1057,7 +1056,7 @@ div.separator {
 
     .display__text { 
         right: 7.20rem;
-        font-size: .78rem;
+        font-size: .89rem;
     }
 }
 
@@ -1080,7 +1079,7 @@ div.separator {
 
     .display__text { 
         right: 7.55rem;
-        font-size: .68rem;
+        font-size: .82rem;
     }
 
     .card { 
@@ -1109,7 +1108,7 @@ div.separator {
 
     .display__text { 
         right: 7.5rem;
-        font-size: .68rem;
+        font-size: .77rem;
     }
 
     .card { 
@@ -1136,7 +1135,7 @@ div.separator {
 
     .display__text { 
         right: 6.67rem;
-        font-size: .62rem;
+        font-size: .73rem;
     }
 
     .card { 
@@ -1160,7 +1159,7 @@ div.separator {
 @media only screen and (max-width: 369px) { 
     .display__text { 
         right: 6.67rem;
-        font-size: .62rem;
+        font-size: .68rem;
     }
     
     .card { 
@@ -1236,7 +1235,7 @@ div.separator {
 
     .display__text { 
         right: 6rem;
-        font-size: .58rem;
+        font-size: .65rem;
     }
 
     .card { 
@@ -1272,7 +1271,7 @@ div.separator {
 
     .display__text { 
         right: 5.78rem;
-        font-size: .58rem;
+        font-size: .60rem;
     }
 
     .card { 
