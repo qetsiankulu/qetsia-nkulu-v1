@@ -1,7 +1,7 @@
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu= document.querySelector('.closeMenu');
 const openMenu= document.querySelector('.openMenu'); 
-const menu_items= document.querySelector('.navbar.mainMenu li a'); 
+const menu_items= document.querySelectorAll('.navbar .mainMenu .list-item a'); 
 
 
 openMenu.addEventListener('click', show); 
@@ -22,5 +22,5 @@ function show() {
 }
 
 function close() { 
-    mainMenu.style.top = '-1000%'; 
+    mainMenu.style.top = '-100%'; 
 }
