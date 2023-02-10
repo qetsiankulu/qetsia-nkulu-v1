@@ -308,6 +308,8 @@ footer {
     color: #fff; 
     padding: 0.625rem  0; 
     font-size: .75rem; 
+    position: relative;
+    bottom: 0.95rem;
 } 
 
 
