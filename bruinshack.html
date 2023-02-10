@@ -11,25 +11,35 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
    
+
+
+    <!--Font Awesome Icons --> 
+    <script src="https://kit.fontawesome.com/6277d00fb3.js" crossorigin="anonymous"></script>
 </head>
 <body class="project-background">
-    <section class="project-hero"> 
-            <header class="project-nav"> 
-                    <nav>
-                        <div class="nav-container">
-                            <a href="/index.html">
-                            <img src="/resources/images/Qetsia-Nkulu-logo.svg" alt="Qetsia Nkulu-logo" width="100">
-                            </a>
-        
-                             <ul>
-                                <li><a href="/index.html">Portfolio</a></li> 
-                                <li><a href="#">About</a></li>
-                                <li><a href="/resources/documents/Qetsia-Nkulu-Resume(Mock).pdf" target="_blank">Resume</a></li>
-                                <li><a href="#">Contact</a></li>
-                             </ul>
+        <!--Navigation Bar-->
+             <header> 
+                <nav class="navbar project-nav"> 
+                    <div class="icon-container"> 
+                        <a href="./index.html"><img src="./resources/images/Qetsia-Nkulu-logo.svg" alt="Qetsia Nkulu-logo" class="logo"></a>
+                    </div>
+    
+                   <div class="openMenu"><i class="fa fa-bars"></i></div>
+                    <ul class="mainMenu">
+                        <li class="list-item"><a href="#projects">Portfolio</a></li> 
+                        <li class="list-item"><a href="#">About</a></li>
+                        <li class="list-item"><a href="./resources/documents/Qetsia-Nkulu-Resume(Mock).pdf" target="_blank">Resume</a></li>
+                        <li class="list-item"><a href="#">Contact</a></li>
+                        <div class="closeMenu">
+                            <i class="fa fa-times"></i>
                         </div>
-                    </nav> 
+                    </ul>
+                </nav>
+                <script src="./app.js"></script>
             </header>
+    
+    <section class="project-hero"> 
+             
             <div class="project-hero__text text"> 
                         <h1>BruinShack Redesign</h1>
                         <h3>Redesigning BruinShack's website with a user-centric approach</h3>
@@ -37,7 +47,7 @@
             <img class="arrow" src="/resources/images/arrow.svg" height="31" width="55"> 
         </section>
         
-        <section class="project-section">
+        <!-- <section class="project-section">
             <div class="project-section__wrapper">
                     <div class="project-section__text text"> 
                             <h1>About the Project</h1>
@@ -69,7 +79,7 @@
                             <div class="separator"></div>
                     </div>
                 </div>
-        </section>
-           
+        </section> -->
+    
 </body>
 </html>

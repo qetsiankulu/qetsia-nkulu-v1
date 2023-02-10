@@ -67,6 +67,7 @@ header {
     position: sticky;  
     top: 0; 
 }
+
 .navbar { 
     background-color:  #FFD90D; 
     color:#000; 
@@ -313,27 +314,47 @@ footer {
 
 /* 5. Project Page Styling
 ======================================== */
-
-/* Project Page Hero*/
+/* Project Page Navigation Bar*/
 .project-nav { 
-        background-color: transparent; 
-        display: block;
+    background-color: transparent; 
+    color: #FFD90D; 
+    display: flex;
+    font-size: 1.5rem;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+
+.project-nav a { 
+    color: #FFD90D;
+    text-decoration: none;
+}
+
+.project-nav a:hover { 
+    color: #ffffff; 
+    font-weight: 600;
+}
+
+.project-nav  .openMenu { 
+    font-size: 2rem;
+    margin: 1.25rem; 
+    display: none;
+    cursor: pointer;
+}
+
+.project-nav .mainMenu .closeMenu { 
+    font-size: 2rem; 
+    display: none;
+    cursor: pointer; 
 }
 
 .project-nav img { 
      filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
 } 
         
-.project-nav .nav-container ul li a:any-link { 
-    color: #FFD90D; 
-    text-decoration: none;
-}
-        
-header.project-nav .nav-container ul li a:hover { 
-    color: #ffffff; 
-    font-weight: 600;
-}  
-
 .project-hero { 
     height: 100vh; 
     width:  100%; 
@@ -360,7 +381,6 @@ header.project-nav .nav-container ul li a:hover {
 
 
 /* Project Page Section*/
-
 .project-section { 
     display: flex;
     width: 100%;
@@ -414,9 +434,9 @@ div.separator {
 
 /* 6. Responsive CSS 
 ======================================== */
-
-/* Responsive Navgation Bar*/ 
 @media all and (max-width: 658px) { 
+
+    /* Responsive Navgation Bar Homepage*/ 
     header { 
         width: 100%; 
         z-index: 1;
@@ -424,11 +444,11 @@ div.separator {
         top: 0; 
     }
 
-    .navbar { 
+    .navbar, .project-nav{ 
         flex-direction: row;
     }
 
-    .navbar > div {
+    .navbar > div, .project-nav > div {
         padding: 0.625rem 0rem; 
     }
 
@@ -448,6 +468,7 @@ div.separator {
         align-items: center;
         background: #FFD90D;
         transition: top 1s ease 0s;
+    
 
         display: none;
         font-size: 2.5rem;
@@ -474,9 +495,34 @@ div.separator {
         font-size: 2.5rem;
     }
 
+    /* Responsive Navgation Bar Project Page*/ 
+    .project-nav .mainMenu { 
+        height: 100vh; 
+        position: fixed;
+        top: 0; 
+        right: 0;
+        left: 0; 
+        z-index: 10; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #282828;
+        transition: top 1s ease 0s;
+        display: none;
+        font-size: 2.5rem;
+    }
+
+    .project-nav .mainMenu .list-item a:hover { 
+        background: none;
+        color: #fff;
+        font-size: 2.5rem;
+    }
+  
 }
 
-/* Responsive Page Content*/ 
+
+
+/* Responsive Home Page Content*/ 
 @media only screen and (max-width: 1225px)  {
 
     .intro-container { 
@@ -1294,9 +1340,13 @@ div.separator {
     }
 }
 
+/* Responsive Project Page Content*/ 
+
+
+
+
 
 /* Responsive Footer*/ 
-
 @media only screen and (max-width: 952px) { 
     .social-icon { 
         height: 3.5rem; 
