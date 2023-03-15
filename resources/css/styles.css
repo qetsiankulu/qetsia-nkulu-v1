@@ -299,14 +299,14 @@ footer {
 }
 
 .social-icon { 
-    filter: invert(83%) sepia(66%) saturate(1457%) hue-rotate(346deg) brightness(100%) contrast(102%);
+    color:#FFD90D;
     height: 3.75rem; 
 }
 
 .footer-text { 
     text-align: center; 
     color: #fff; 
-    padding: 0.625rem  0; 
+    margin: 1.625rem 0; 
     font-size: .75rem; 
     position: relative;
     bottom: 0.95rem;
@@ -1372,7 +1372,7 @@ div.separator {
     }
 
     .footer-text { 
-        padding: 0.62rem  0; 
+        margin: 0.62rem  0; 
     } 
 }
 
