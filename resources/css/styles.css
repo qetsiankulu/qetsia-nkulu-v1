@@ -1107,7 +1107,7 @@ div.separator {
 
     .display__text { 
         right: 7.20rem;
-        font-size: .89rem;
+        /* font-size: .89rem; */
     }
 }
 
@@ -1130,7 +1130,7 @@ div.separator {
 
     .display__text { 
         right: 7.55rem;
-        font-size: .82rem;
+        /* font-size: .82rem; */
     }
 
     .card { 
@@ -1159,7 +1159,7 @@ div.separator {
 
     .display__text { 
         right: 7.5rem;
-        font-size: .77rem;
+        /* font-size: .77rem; */
     }
 
     .card { 
@@ -1186,7 +1186,7 @@ div.separator {
 
     .display__text { 
         right: 6.67rem;
-        font-size: .73rem;
+        /* font-size: .73rem; */
     }
 
     .card { 
@@ -1210,7 +1210,7 @@ div.separator {
 @media only screen and (max-width: 369px) { 
     .display__text { 
         right: 6.67rem;
-        font-size: .68rem;
+        /* font-size: .68rem; */
     }
     
     .card { 
