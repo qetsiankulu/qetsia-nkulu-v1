@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400&family=Oswald:wght@300;400;500;600&display=swap');
+
+:root { 
+  --color-black: #000; 
+  --color-white: #fff; 
+  --color-grey: #6e6e6e; 
+  --color-red: #dd372f; 
+  --brand-yellow: #FFD90D; 
+  --font-oswald: "Oswald", sans-serif;
+}
+
+
+.project-container { 
+    font-family: 'IBM Plex Serif', serif; 
+    background-color: var(--color-black); 
+ }
+ 
+ section { 
+   color: white; 
+   max-width: 1400px;
+   min-width: 300px;
+   margin: 0 auto;  
+   font-size: clamp(.75rem, 3vw, 1rem); 
+   padding: 0 2rem; 
+ }
+ 
+ section h2 { 
+   font-size: clamp(1.5rem, 3vw, 2rem); 
+   font-family: var(--font-oswald); 
+ }
+ 
+ .section-separator{ 
+   border-color: var(--color-red); 
+ }
+ 
+ .section-text p {
+   padding-top: .75rem; 
+   text-align: justify; 
+ }
+ 
+ /* Hero */ 
+ #hero { 
+   display: flex; 
+   justify-content: center;
+   height: 100vh; 
+   align-items: center; 
+   flex-wrap: wrap; 
+   padding: 0; 
+ }
+ 
+ 
+ #hero .container { 
+   display: block; 
+   width: auto; 
+   max-width: none; 
+   clear: none; 
+   flex: 0 auto; 
+ }
+ 
+ #hero .hero-wrapper { 
+   display: flex; 
+   max-width: 1140px; 
+   flex-direction: column; 
+   align-items: center; 
+   justify-content: center;
+ }
+ 
+  #hero .hero-grid {
+   width: 100%; 
+   color: var(--color-white); 
+   
+   justify-items: center;
+   align-items: center;
+ 
+   display: grid;
+   grid-template-columns: 2fr 1fr;   
+   grid-template-rows: auto auto; 
+   grid-auto-columns: 1fr;
+ }
+ 
+ #hero-image { 
+   display: block; 
+   height: auto; 
+   max-width: 70%; 
+   min-width: 60%;
+   margin: 0 auto; 
+   padding: 1rem 0; 
+ }
+ 
+  #hero-text figcaption {
+   padding-bottom: 1rem; 
+   text-align: center;
+   font-size: clamp(3px, 4vw, 9px); 
+ }
+ 
+ #hero #hero-text { 
+   text-align: center; 
+ }
+ 
+ #hero-text .small-grey-text { 
+   font-size: clamp(5px, 4vw, 16px); 
+   color: var(--color-grey); 
+   font-family: var(--font-oswald)
+ }
+ 
+ #hero-text h1 { 
+  font-size: clamp(32px, 4vw, 60px); 
+  font-family: var(--font-oswald);
+  color: var(--color-white)
+ }
+ 
+ #hero-text p { 
+   margin-top: .75rem; 
+  font-size: clamp(6px, 4vw, 14px); 
+  font-style: italic; 
+  font-family: var(--font-oswald);
+  color: var(--color-white); 
+ }
+ 
+ /* Tribute Info */ 
+ #tribute-info a:any-link { 
+   color: var(--color-red); 
+ }
+ 
+ #tribute-info a:visited { 
+   color: var(--color-red); 
+ }
+ 
+ /* Albums */ 
+ .albums-content { 
+  padding-top: 20px;  
+ }
+ 
+ .album-grid { 
+   width: 100%; 
+   padding-top: 1rem; 
+ 
+   justify-items: center;
+   align-items: center;
+   text-align: center;
+ 
+ 
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr); 
+   grid-template-rows: auto auto;
+   grid-auto-columns: 1fr;
+   column-gap: 2rem;
+ }
+ 
+ .album-text {
+   padding-top: 1.25rem; 
+ }
+ 
+ .album-name, .album-year { 
+   font-size: 1.5rem; 
+ }
+ 
+ .album-visual img { 
+   max-width: 95%; 
+   min-width: 80%; 
+   height: auto; 
+ }
+ 
+ .album-group { 
+   position: relative; 
+ }
+ 
+ .album-group a::before{ 
+   content:""; 
+   position: absolute; 
+   top: 0px; 
+   right: 0px; 
+   bottom: 0px; 
+   left: 0px; 
+ }
+ 
+ /* Playlist */
+ 
+ iframe { 
+   display: block;
+   width: 100%; 
+   max-width: 1400px;; 
+   min-width: 150px;
+   margin: 0 auto; 
+   margin-top: 1.5rem; 
+ }
+ 
+ /* Media Queries */
+ @media (min-width: 320px) { 
+   .album-group { 
+     padding: 1.25rem; 
+   }
+ }
+ 
+ @media (max-width: 380px) { 
+   .album-name, .album-year { 
+     font-size: .5rem; 
+   }
+ }
+ 
+ @media (max-width: 430px) { 
+   .album-name, .album-year { 
+     font-size: .75rem; 
+   }
+ }
+ 
+ @media screen and (max-width: 560px) { 
+   #hero { 
+   height: 100%; 
+   margin-bottom: 2.25rem; 
+   }
+ 
+   #hero-text p {
+     margin-top: 1rem; 
+   }
+ 
+   #albums .album-grid { 
+     grid-template-columns: 1fr;
+     row-gap: .5rem;
+   }
+ }
+ 
+ @media (max-width: 724px) {
+   #hero .hero-grid { 
+     grid-template-columns: 1fr;
+   }
+ 
+   .album-name, .album-year { 
+     font-size: 1rem; 
+   }
+ }
+ 
+ @media (max-width: 1158px) { 
+ .album-grid { 
+     grid-template-columns: 1fr;
+     row-gap: 1rem;
+   }
+ 
+  .album-text {
+     padding-top: 1rem; 
+   }
+ 
+   .album-name, .album-year { 
+     font-size: 1.25rem; 
+   }
+ }
+ 
+ 
