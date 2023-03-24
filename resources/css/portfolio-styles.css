@@ -13,6 +13,8 @@
     --brand-burgundy: #6E0A1F;
     --brand-yellow:  #FFD90D;
     --brand-grey: #282828;
+    --font-body: 'Inter'; 
+    --font-heading: 'Bebas Neue'; 
 }
 
 /* 1. Universal Styling 
@@ -25,7 +27,7 @@
 
 .portfolio-homepage { 
     background-color: var(--brand-grey); 
-    font-family: 'Inter', sans-serif; 
+    font-family: var(--font-body) , sans-serif; 
 }
 
 html { 
@@ -38,7 +40,7 @@ html {
 }
 
 footer { 
-    font-family: 'Inter', sans-serif; 
+    font-family: var(--font-body), sans-serif; 
 }
 
 
@@ -48,7 +50,7 @@ footer {
 .portfolio-homepage h1 { 
     font-size: 8rem;
     color: var(--brand-yellow); 
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: var(--font-heading), sans-serif;
 }
 
 .portfolio-homepage h2 { 
@@ -151,7 +153,7 @@ header {
     font-weight: normal;
 
     margin: 0.3125rem;  
-    color: #ffffff; 
+    color: var(--color-white); 
 }
 
 .intro__text p { 
@@ -160,11 +162,11 @@ header {
 }
 
 .intro__text p > span { 
-    color: #FFD90D; 
+    color: var(--brand-yellow); 
 }
 
 .intro__text p > strong { 
-    color: #ffffff; 
+    color: var(--color-white); 
     font-weight: 600;
 }
 
@@ -181,7 +183,7 @@ header {
 
 /* Projects Display */
 .display__text { 
-    color: white; 
+    color: var(--color-white); 
     padding-top: 0.9375rem;
     font-weight: 100;
     font-size: 1.2rem;
@@ -197,7 +199,7 @@ header {
     vertical-align: top;
     margin-top: 0.6875rem; 
     margin-right: 0.625rem; 
-    background: #fff;
+    background: var(--color-white);
 }
 
 .card-container { 
@@ -216,7 +218,6 @@ header {
     width: 62.5rem; 
     padding: 2.5rem; 
 } 
-
 
 .card-contents { 
     display: flex;
@@ -238,7 +239,7 @@ header {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    color: #fff; 
+    color: var(--color-white); 
     line-height: 3.125rem; 
     
 
@@ -263,8 +264,8 @@ header {
 }
 
  .btn { 
-   background-color: #FFD90D;
-   color: #000; 
+   background-color: var(--brand-yellow);
+   color: var(--color-black); 
    text-decoration: none;
    border-radius: 0.5rem;
    padding: 1rem 2rem; 
@@ -272,11 +273,11 @@ header {
 } 
 
 .btn:any-link { 
-    color: black; 
+    color: var(--color-black); 
     text-decoration: none;
 }
 
-.card-item .btn:hover { 
+.card:not(.card-unavailable) .card-item .btn:hover { 
     background-color: var(--brand-burgundy);
     color: var(--brand-yellow); 
 }
@@ -287,6 +288,8 @@ div.card-unavailable .card-item--text .btn {
     filter: brightness(50%);
 }
 
+
+
 /* Site-Footer */
 footer {
     width: 100%;
@@ -296,7 +299,7 @@ footer {
 }
 
 .footer-separator { 
-    border-color: #FFD90D; 
+    border-color: var(--brand-yellow);
     width: 40vw; 
     margin: 0 auto; 
     margin-bottom: 20px; 
@@ -314,13 +317,13 @@ footer {
 }
 
 .social-icon { 
-    color:#FFD90D;
+    color: var(--brand-yellow);
     height: 3.75rem; 
 }
 
 .footer-text { 
     text-align: center; 
-    color: #fff; 
+    color: var(--color-white); 
     margin: 1.625rem 0; 
     font-size: .75rem; 
     position: relative;
@@ -332,7 +335,7 @@ footer {
 /* Project Page Navigation Bar*/
 .project-nav { 
     background-color: transparent; 
-    color: #FFD90D; 
+    color: var(--brand-yellow);
     display: flex;
     font-size: 1.5rem;
 
@@ -344,12 +347,12 @@ footer {
 
 
 .project-nav a { 
-    color: #FFD90D;
+    color: var(--brand-yellow);
     text-decoration: none;
 }
 
 .project-nav a:hover { 
-    color: #ffffff; 
+    color: var(--color-white);
     font-weight: 600;
 }
 
@@ -530,8 +533,6 @@ div.separator {
     }
   
 }
-
-
 
 /* Responsive Home Page Content*/ 
 @media only screen and (max-width: 1225px)  {
