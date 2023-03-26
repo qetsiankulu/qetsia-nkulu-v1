@@ -293,21 +293,23 @@ div.card-unavailable .card-item--text .btn {
 /* Site-Footer */
 footer {
     width: 100%;
-    display: inline-flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0px 2fr 1fr;
     justify-content: center;
+    align-content: space-evenly;
+    row-gap: 1rem;
 }
 
 .footer-separator { 
     border-color: var(--brand-yellow);
     width: 40vw; 
-    margin: 0 auto; 
-    margin-bottom: 20px; 
+    height: 1px; 
 }
 
 .footer-list { 
     display: inline-flex;
     justify-content: center;
+    grid-row: 2 / span 1;
 }
 
 .footer-list .list-item{ 
@@ -324,12 +326,12 @@ footer {
 .footer-text { 
     text-align: center; 
     color: var(--color-white); 
-    margin: 1.625rem 0; 
     font-size: .75rem; 
     position: relative;
     bottom: 0.95rem;
-} 
+    grid-row: 3 / span 1; 
 
+} 
 /* 5. Project Page Styling
 ======================================== */
 /* Project Page Navigation Bar*/
@@ -1379,7 +1381,6 @@ div.separator {
         margin: 0.62rem  0; 
     } 
 }
-
 
 
 @media only screen and (max-width: 225px) { 
