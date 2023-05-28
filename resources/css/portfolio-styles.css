@@ -302,8 +302,11 @@ footer {
 
 .footer-separator { 
     border-color: var(--brand-yellow);
-    width: 65vw; 
+    width: 45vw; 
+    max-width: 927px;
+    min-width: 200px;
     height: 1px; 
+    margin: 0 auto; 
 }
 
 .footer-list { 
