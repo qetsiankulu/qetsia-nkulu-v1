@@ -242,7 +242,6 @@ header {
     color: var(--color-white); 
     line-height: 3.125rem; 
     
-
     padding: 2rem 4rem; 
     text-align: left;
 }
@@ -253,7 +252,7 @@ header {
 
 .card-item--text p { 
     padding: 0.625rem 0; 
-    font-size: 1.625rem;
+    font-size: 1.525rem;
     line-height: 2rem; 
     font-weight: 400; ;
 }
